@@ -1,0 +1,1 @@
+ALTER TABLE `line_card` ADD COLUMN `prod_ids` TEXT NULL DEFAULT NULL AFTER `template`;

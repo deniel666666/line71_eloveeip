@@ -1,0 +1,1279 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: Microsoft JhengHei;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    -webkit-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+    /* ↓ 英文段行 */
+    word-wrap: break-word;
+    /* ↓ light box for phone touch*/
+    -webkit-overflow-scrolling: touch;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+body {
+    background-color: #f4f3ef;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 16px;
+    /* ↓ iphone上不觸發事件解決辦法↓  */
+    cursor:pointer; 
+    /* height: inherit; */
+}
+
+/*img {
+    width: 100%;
+    height: auto;
+}*/
+
+@media (max-width: 576px) {
+    body {
+        min-width: 320px;
+        min-height: 568px;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+.askBtn {
+    font-size: 4.5rem;
+    position: relative;
+    color: #0071bc;
+}
+
+nav {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.header ul>li {
+    margin: 0px .7rem;
+}
+
+.header ul>li:not(:last-child) {
+    display: flex;
+    align-items: center;
+}
+
+.header ul>li:not(:last-child) span,
+.header ul>li:not(:last-child) a {
+    font-size: 1.125rem;
+    color: #333333;
+    text-decoration: none;
+}
+
+.header ul li.askBtn div.text {
+    position: absolute;
+    font-size: 1.125rem;
+    color: #fff;
+    top: 0px;
+    left: 0px;
+    width: 4.5rem;
+    height: 3.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.25rem;
+    font-weight: 700;
+    font-family: Microsoft JhengHei;
+}
+
+.logoImgBox img {
+    max-width: 220px;
+    display: block;
+    margin: 0px auto;
+}
+
+.membersOnlyBox {
+    background-color: #d6d2c4;
+    padding: .8rem 0px;
+    margin-bottom: 1.25rem;
+}
+
+.membersOnlyBox .members:not(:first-child) a {
+    text-align: center;
+    color: #808080;
+    font-size: 1.25rem;
+    padding: .8rem 0px;
+    background-color: #eaeaea;
+    text-decoration: none;
+    display: block;
+}
+
+.membersOnlyBox .members:not(:first-child) a.active {
+    color: #333333;
+}
+
+.membersOnlyBox .members:first-child h3 {
+    text-align: center;
+    color: #333333;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: .8rem 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.membersOnlyBox .members i {
+    font-size: .8rem;
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+}
+
+/* Collapse start*/
+.membersAccordionBox {
+    margin-bottom: 1.25rem;
+}
+
+.membersAccordionBox .member {
+    background-color: #d6d2c4;
+    text-align: center;
+    color: #333333;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: .8rem 0px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.membersAccordionBox ul {
+    margin: 0px;
+}
+
+.membersAccordionBox ul a {
+    text-align: center;
+    color: #808080;
+    font-size: 1.25rem;
+    padding: .8rem 0px;
+    background-color: #eaeaea;
+    text-decoration: none;
+    display: block;
+}
+
+.membersAccordionBox ul a.active {
+    color: #333333;
+}
+
+/* Collapse end*/
+.stepBox{
+	margin-bottom: 2rem;
+}
+.stepBox h3.title {
+    color: #736357;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.stepIcon {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: .2rem .5rem;
+    background-color: #333;
+    margin-right: 5px;
+}
+
+.stepIcon.s_one {
+    background-color: #ff9c00;
+}
+
+.stepIcon.s_two {
+    background-color: #00a0e9;
+}
+
+.stepIcon.s_thr {
+    background-color: #009944;
+}
+
+.stepIcon.s_for {
+    background-color: #e4007f;
+}
+
+.stepOneBox ul {
+    background-color: #fff;
+    padding: .375rem .75rem;
+    display: flex;
+}
+
+.stepOneBox ul img {
+    max-width: 50px;
+    margin-right: .35rem;
+}
+
+.stepOneBox ul li {
+    color: #777777;
+    padding: .45rem;
+    border: 1px solid #e6e6e6;
+    margin: .375rem 0px;
+    display: block;
+    width: 100%;
+}
+
+.stepOneBox>ul {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0px;
+}
+
+
+/* 滾動Bar stle */
+.stepOneBox ul::-webkit-scrollbar {
+    width: 5px;
+}
+
+.stepOneBox ul::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.stepOneBox ul::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: rgb(219, 219, 219);
+}
+
+
+/* step-2 */
+
+.stepTwoBox>div {
+    background-color: #fff;
+    padding: .75rem;
+    /* display: flex; */
+}
+
+.selectStyle h4 {
+    font-size: 1.125rem;
+    color: #777777;
+    margin-bottom: .5rem;
+    line-height:1.125rem;
+}
+
+
+
+.selectStyle .select-wrap {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.selectStyle .select {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.selectStyle .select::-webkit-input-placeholder {
+    color: #a7a7a7;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.selectStyle .select:-ms-input-placeholder {
+    color: #a7a7a7;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.selectStyle .select::-ms-input-placeholder {
+    color: #a7a7a7;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.selectStyle .select::placeholder {
+    color: #a7a7a7;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.selectStyle .select.opened .select-trigger:after {
+    margin-top: 3px;
+    -webkit-transform: rotate(-135deg) translateY(-50%);
+    transform: rotate(-135deg) translateY(-50%);
+}
+
+.selectStyle .select.opened .options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.selectStyle .select-trigger {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: .5rem .7rem;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    color: #333333;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.selectStyle .select-trigger:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: .8rem;
+    margin-top: -3px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    transform: rotate(45deg) translateY(-50%);
+    transition: all 0.4s ease-in-out;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.selectStyle .options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    min-width: 100%;
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+}
+
+.selectStyle .option {
+    position: relative;
+    display: block;
+    padding: .5rem .7rem;
+    color: #333333;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.selectStyle .option:first-of-type {
+    border-radius: 0;
+}
+
+.selectStyle .option:last-of-type {
+    border-bottom: 0;
+    border-radius: 0;
+}
+
+.selectStyle .option:hover {
+    color: #666;
+}
+
+
+/* stpe-3 */
+.stepThrBox>div {
+    background-color: #fff;
+    padding: .75rem;
+    /* display: flex; */
+}
+
+.stepThrBox ul {
+    margin-bottom: .5rem;
+}
+
+.stepThrBox ul li {
+    width: 50%;
+    line-height:1.125rem;
+
+}
+
+.stepThrBox ul li a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: #777777;
+}
+.stepThrBox ul li a.active{
+	color: #009944;
+}
+
+.stepThrBox ul li a i{
+	font-size: 12px;
+	margin-right: .3rem;
+	position: relative;
+	top: -1px;
+
+}
+input.customQuantitySelect{
+	width: 100%;
+	padding: .5rem .7rem;
+	background: none;
+	cursor: pointer;
+	font-size: 1.125rem;
+	font-weight: 300;
+	border-radius: 0px;
+    /* background-color: #e6e6e6; */
+    background-color: #F2F2F2;    
+	border: none;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+input.form-control:focus{
+	background-color: #e6e6e6;
+	border: none;
+	box-shadow: none;
+}
+.smallToolsBox .tools{
+	margin-bottom: 1rem;
+}
+
+.smallToolsBox h4{
+	text-align: center;
+	background-color: #009944;
+	font-size: .875rem;
+	color: #fff;
+	padding: .5rem 0px;
+}
+
+.smallToolsBox p {
+	color: #333333;
+	font-size: .875rem;
+	text-align:justify;
+}
+
+
+.operationWindows input.size {
+    width: 3.5rem;
+    padding: .5rem;
+    background: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-weight: 300;
+    border-radius: 0px;
+    background-color: #e6e6e6;
+    background-color: #F2F2F2;
+    border: none;
+    color: #333333;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.operationWindows p{
+	display: inline-block;
+}
+
+/* setp4 */
+.stepForBox>div {
+    background-color: #fff;
+    padding: .75rem;
+}
+
+
+.stepForBox>div{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0px;
+}
+
+
+/* 滾動Bar stle */
+.stepForBox div::-webkit-scrollbar {
+    width: 5px;
+}
+
+.stepForBox div::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.stepForBox div::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: rgb(219, 219, 219);
+}
+
+
+
+
+/* updown start*/
+
+    form.updownBox{
+        height: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .file-upload-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .file-upload-wrapper:after {
+        content: attr(data-text);
+        font-size: 1.125rem;
+        padding-left: .7rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        display: block;
+        width: calc(100% - 40px);
+        pointer-events: none;
+        z-index: 20;
+        height: 100%;
+        color: #999;
+        font-weight: 300;
+    }
+
+    .file-upload-wrapper:before {
+        content: '檔案上傳';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        background: #8C6239;
+        color: #fff;
+        z-index: 25;
+        font-size: 1.125rem;
+        padding: 0px .7rem;
+        height: 100%;
+        text-transform: uppercase;
+        pointer-events: none;
+    }
+
+    .file-upload-wrapper:hover:before {
+        background: #523416;
+    }
+
+    .file-upload-wrapper input {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+    }
+/* // */
+    .joinListBox>div{
+        background-color: #fff;
+        font-size: 1.125rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        color: #333;
+        position: relative;
+        padding-left: .7rem;
+
+    }
+
+    #addBtn{
+        display: inline-block;
+        background-color: #664691;
+        color: #fff;
+        height: 100%;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 0px .7rem;
+        cursor: pointer;
+        font-size: 1.125rem;
+    }
+
+    #addBtn:hover{
+        background-color: #2f1a4a;
+
+    }
+    .joinListBox .itemAmount{
+        font-weight: 700;
+        color: #664691;
+
+    }
+/* updown end*/
+
+
+/* table start */
+
+    #printListCollapse{
+        background-color: #D6D2C4;
+        color: #333333;
+        font-size: 1.375rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 0px;
+    }
+    #printListOne{
+        background-color: #fff;
+    }
+    #printListOne .content{
+        font-size: 1.125rem;
+        line-height: 2.6rem;
+    }
+
+    #printListOne table{
+        border-collapse: separate;
+        border-spacing: 0px .5rem;
+    }
+    #printListOne .content thead tr{
+        background-color: #808080;
+        color: #fff;
+
+    }
+    #printListOne .content tbody tr{
+        background-color: #F2F2F2;
+        color: #333;
+    }
+    #no-more-tables{
+        margin-bottom: 1.5rem;
+    }
+    #no-more-tables th,
+    #no-more-tables td,
+    #no-more-tables tr {
+    padding-left: .75rem;
+    }
+    .tbProject{
+        width: 15%;
+    }
+    .tbSpecification{
+        width: 35%;
+    }
+    .tbNum{
+        width: 15%;
+    }
+    .tbDelete{
+        width: 60px;
+    }
+
+@media only screen and (max-width: 1140px) {
+
+    /* Force table to not be like tables anymore */
+    #no-more-tables table,
+    #no-more-tables thead,
+    #no-more-tables tbody,
+    #no-more-tables th,
+    #no-more-tables td,
+    #no-more-tables tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #no-more-tables tr {
+        border: 1px solid #ccc;
+        margin-bottom: 1.5rem;
+    }
+
+    #no-more-tables td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 30%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    #no-more-tables td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        /* top: 6px; */
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+
+    }
+
+    /*
+    Label the data
+    */
+    #no-more-tables td:before {
+        content: attr(data-title);
+    }
+}
+
+    .deliveryInfor{
+        background-color: #808080;
+        color: #fff;
+        font-size: 1.125rem;
+        padding-left: .75rem;
+        line-height: 2.6rem;
+        margin-bottom: 1.125rem;
+    }
+
+    .deliveryInforBox .form-row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .deliveryInforBox .selectStyle .select-trigger{
+        background-color: #F2F2F2;
+    }
+    .sendAddressBox{
+        width: 100%;
+    }
+    .sendAddressBox div.county,.sendAddressBox div.area{
+        width: 50%;
+        float: left;
+    }
+    .deliveryInforBox .selectStyle  input.customQuantitySelect{
+            background-color: #F2F2F2;
+
+    }
+.deliveryInforBox .selectStyle label{
+    font-size: 1.125rem;
+    color: #777777;
+    margin-bottom: .5rem;
+    line-height: 1.125rem;
+}
+.deliveryInforBox .selectStyle input{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: .5rem .7rem;
+    background-color: #F2F2F2;
+    cursor: pointer;
+    color: #333333;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0px;
+}
+.totalAmountBox{
+    border-top: 1px solid #808080;
+    margin-top: 1.125rem;
+    padding-top: 1rem;
+    font-size: 1.125rem;
+}
+.totalAmountBox span{
+    height: 3.5rem;
+    line-height: 3.5rem;
+
+}
+.totalAmountBox span.color{
+    font-weight: 700;
+    color: #BE1932;
+}
+.totalAmountBox .submitBtn{
+    background-color: #BE1932;
+    color: #fff;
+    border-radius: 0px;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0px .7rem;
+}
+
+.totalAmountBox .submitBtn:hover{
+    background-color: #7d081a;
+}
+@media (min-width: 768px) {
+    .totalAmountBox .submitBtn{
+        float: right;
+    }
+
+}
+/* table end */
+
+
+footer a.photonic ,footer p{
+    color: #666666;
+    text-decoration: none;
+    font-size: 0.875rem;
+    padding: .5rem 0px ;
+}
+
+
+/* lightbox */
+.modal-content{
+    border-radius: 0px;
+    border: none;
+}
+
+#otherSpecification .modal-title{
+    color: #736357;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#otherSpecification .modal-title span.other{
+    color: #777;
+    font-size: 1.125rem;
+    padding-left: .5rem;
+}
+
+#otherSpecification .askText,  #otherSpecification .replyText{
+    color: #777;
+    font-size: 1.125rem;
+}
+
+#otherSpecification .form-control{
+    border-radius: 0px;
+    margin-bottom: 1rem;
+    min-height: 100px;
+    border: none;
+}
+
+#otherSpecification .askPriceBtn{
+    background-color: #777;
+    color: #fff;
+    font-size: 1.125rem;
+    border-radius: 0px;
+    padding: 0px .7rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.125rem;
+}
+
+#otherSpecification .modal-content{
+    background-color: #f4f3ef;
+}
+
+#otherSpecification .modal-footer{
+    border: none;
+}
+#otherSpecification .modal-header{
+    padding: 0px;
+}
+
+#otherSpecification .modal-title{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+#otherSpecification .modal-header .close{
+    margin: 0px;
+}
+
+
+
+#contactUs img.lineImg{
+    width: 50px;
+    height: auto;
+}
+#contactUs .modal-body {
+    padding: 2.5rem 1rem; 
+}
+#contactUs .modal-body a.phone{
+    font-size: 1.125rem;
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    line-height: 1.5rem;
+}
+#contactUs .modal-body .iconBox{
+    width: 50px;
+    height: 50px;
+    display:inline-block;
+    line-height: 50px;
+}
+#contactUs .modal-body i.icon-phone{
+    font-size: 2rem;
+    color: #333333;
+}
+
+#contactUs .modal-dialog{
+    max-width: 414px;
+}
+
+#contactUs h5{
+    color: #777;
+    font-size: 1.125rem;
+}
+
+/* /////////////////////// */
+
+        .stepOneBox ul li.active {
+            color: #fff;
+            background-color: #777777;
+            border: none;
+        }
+
+
+
+    /* /// */
+        .machiningBox label.list {
+            color: #333333;
+            width: 100%;
+            /* background-color: #e6e6e6; */
+            background-color: #F2F2F2;
+            font-size: 1.125rem;
+            border-radius: 0px;
+            border: none;
+            margin-bottom: 1rem;
+            text-align: left;
+            box-shadow: none;
+            padding: .5rem .7rem;
+        }
+        .machiningBox label.list span {
+            font-size: .875rem;
+            display: inline-block;
+            border-left: 1px solid #333;
+            padding-left: .4rem;
+            /* width: 60%; */
+
+        }
+
+        .machiningBox label.list.active{
+            color: #fff;
+            background-color: #666666;
+        }
+        .machiningBox label.list.active>span{
+            border-color: #fff;
+        }
+
+/* 訂單處理查詢 */
+.orderProcessing .titleBox{
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: #333;
+    font-weight: 700;
+    padding: 0px 15px;
+}
+.orderProcessing .titleBox span.remarks{
+    font-size: .875rem;
+    color: #F15A24;
+}
+.orderNumberBox{
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0px;
+
+}
+.orderNumberBox .pdSpacing{
+    padding: 0px 15px;
+    margin-bottom: .5rem;
+}
+
+
+.orderNumberBox span{
+    padding-left: .75rem;
+    font-size: 1.125rem;
+    line-height: 2.6rem;
+    color: #808080;
+}
+.orderNumberBox table{
+    font-size: 1.125rem;
+    line-height: 2.6rem;
+    overflow-x: hidden;
+}
+
+.orderNumberBox tbody tr {
+    background-color: #F2F2F2;
+    color: #333;
+}
+
+.orderNumberBox table {
+    border-collapse: separate;
+    border-spacing: 0px .5rem;
+}
+
+.orderNumberBox  thead tr {
+    background-color: #808080;
+    color: #fff;
+}
+
+.orderNumberBox .remittanceInputBox{
+    float: left;
+}
+.orderNumberBox .remittanceInputBox input{
+    border-radius: 0px;
+    width: 150px;
+}
+
+.orderNumberBox span.noticeDisplay{
+    float: right;
+    font-size: 1.125rem;
+    line-height: 2.6rem;
+    padding: 0px .75rem;
+    color: #fff;
+    display: block;
+    margin-left: .5rem;
+}
+
+.remittanceInputBox button,.remittanceInputBox input{
+    height: initial;
+    font-size: 1.125rem;
+    line-height: 2.6rem;
+    padding: 0px .75rem;
+    border-radius: 0px;
+}
+
+.remittanceInputBox input.form-control:focus{
+    background-color: #fff;
+    border: 1px solid #ced4da;
+}
+
+.orderNumberBox i{
+    z-index: 100;
+    position: relative;
+    pointer-events: none;
+}
+.orderNumberBox .file-upload-wrapper:before{
+    display: none;
+}
+.orderNumberBox form.updownBox{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.orderNumberBox .file-upload-wrapper:after{
+    background: inherit;
+    font-size: 1.125rem;
+    line-height: 2.6rem;
+    padding-left: 2rem;
+    color: #F7931E;
+    cursor: pointer;
+
+}
+.orderNumberBox .file-upload-wrapper input{
+    height: 25px;
+    line-height: 20px;
+    top: 7px;
+}
+/* 上傳檔案 */
+.orderNumberBox .uploadBtn{
+    position: relative;
+}
+.noPassColor{
+    color: #F7931E;
+}
+.waitReviewColor{
+    color: #0071BC;
+}
+.passColor{
+    color: #39B54A;
+}
+.unpaidColor{
+    background-color: #F15A24;
+}
+.paidColor{
+    background-color: #0071BC;
+}
+
+
+.dp-none{
+    display: none!important;
+}
+.dp-block{
+    display: block!important;
+}
+.orderNumberBox i.icon-upload{
+    font-size: 1.75rem;
+    vertical-align: middle;
+}
+.orderNumberBox i.icon-file_view{
+    font-size: 1.4rem;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+#commodityItemDetail .modal-body i{
+    font-size: 12px;
+    margin-right: .35rem;
+    position: relative;
+    top: -2px;
+}
+#commodityItemDetail .modal-body h4{
+    font-size: 1.125rem;
+    color: #333;
+    margin-bottom: .2rem;
+}
+#commodityItemDetail .modal-body p{
+    font-size: 1.125rem;
+    color: #777;
+    margin-bottom: 1rem;
+
+}
+
+#commodityItemDetail .modal-body li{
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 1rem;
+}
+
+#commodityItemDetail .modal-body{
+    padding: 3rem;
+}
+
+/* 會員資料 */
+
+.memberInforBox {
+    background-color: #fff;
+    padding: 1.5rem 15px;
+}
+.memberInforBox label {
+    font-size: 1.125rem;
+    color: #777777;
+    margin-bottom: .5rem;
+    line-height: 1.125rem;
+}
+
+.memberInforBox input {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: .5rem .7rem;
+    background-color: #F2F2F2;
+    cursor: pointer;
+    color: #333333;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0px;
+}
+
+.purchaseOrderBox.selectStyle .select-trigger {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: .5rem .7rem;
+    background-color: #F2F2F2;
+    cursor: pointer;
+    color: #333333;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.purchaseOrderBox input.form-control:focus {
+    background-color: #F2F2F2;
+    border: none;
+    box-shadow: none;
+}
+
+
+.memberInforBox .titleBox span{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: #333;
+    font-weight: 700;
+}
+
+.memberInforBox .submitBtn{
+    border-radius: 0px;
+    color: #fff;
+    background-color: #F15A24;
+    padding: .5rem .7rem;
+}
+
+/* goTop start*/
+a.goTop {
+    display: none;
+    position: fixed;
+    bottom: 1.8rem;
+    right: .6rem;
+    /* background-color: #333333; */
+    background-color: #fff;
+    border: 1px solid #736357;
+    /* padding: 10px 13px; */
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+    color: #736357;
+    z-index: 800;
+    line-height: 2rem;
+    text-align: center;
+}
+
+a.goTop i {
+    font-size: 1.2rem;
+
+}
+
+#combinedBoardPprint,#digitPprint,#kokuPprint{
+    display: none;
+}
+
+
+.listRemarks{
+    font-family: Microsoft JhengHei;
+    width: 100%;
+    color: #333333;
+    background-color: #F2F2F2;
+    border: none;
+    padding: .5rem .7rem;
+}
+
+.listRemarks:focus {
+    outline: none;
+}
+
+
+.LFPrinting .col-6:first-child{
+    padding-right: 5px;
+}
+.LFPrinting .col-6:last-child{
+    padding-left: 5px;
+}

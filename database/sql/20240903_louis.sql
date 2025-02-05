@@ -1,0 +1,1 @@
+ALTER TABLE `system_development` ADD COLUMN `louis` INT(11) NOT NULL DEFAULT 0;

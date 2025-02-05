@@ -1,0 +1,87 @@
+        a:not([href]):not([tabindex]) {
+            color: #fff;
+        }
+        a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+            color: #fff;
+        }
+        .btn:not(:disabled):not(.disabled) {
+            color: #fff;
+        }
+
+
+        .registeredBox{
+            width: 400px;
+        }
+        .registeredBox .logoBox img{
+            max-width: 250px;
+        }
+        .registeredBox .logoBox {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .memberRegisteredBtn{
+            margin-top: .5rem;
+            background-color: #333;
+            color: #FFF;
+        }
+        .memberRegisteredBtn:hover{
+            background-color: #191919;
+        }
+        .signInBtn{
+            width: 100%;
+            color: #fff;
+            background-color: #ef8c17;
+            border-color: initial;
+        }
+        .signInBtn:hover{
+            border-color: initial;
+        }
+        .signInBtn:hover{
+            background-color: #e47c00;
+        }
+        .footerLinkBox{
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        a.forgetPasswordBtn{
+            text-decoration: none;
+            padding-right: 1rem;
+            color: #ef8c17;
+        }
+        a.signIn{
+            text-decoration: none;
+            padding-right: 1rem;
+            color: #ef8c17;
+        }
+        h2.title{
+            color: #822785;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        h4.verificationCode{
+            font-size:  16px;
+            margin-bottom:  8px;
+        }
+        .verify-input-area{
+            width:  100%;
+            padding: 0px;
+        }
+        .varify-input-code{
+            height: 40px;   
+        }
+
+
+        footer{
+            position: fixed;
+            bottom: 0;
+            background-color: #f4f3ef;
+        }
+
+        @media (max-height: 700px) {
+            footer{
+                display: none;
+            }
+        }

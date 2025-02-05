@@ -1,0 +1,192 @@
+.articleEditorBox .dp_none {
+    display: none !important;
+}
+
+.articleEditorBox .no_mb_spacing {
+    margin-bottom: 0px !important;
+}
+
+/* .articleEditorBox .no_content{
+    display: none !important;
+}
+ */
+
+.articleEditorBox .imgBox>img {
+    width: 100%;
+    height: auto;
+    margin-bottom: .25rem;
+}
+
+.articleEditorBox img {
+    width: auto;
+    height: auto;
+}
+
+.editor_mtSpacing {
+    margin-top: 2rem;
+}
+
+.editor_mbSpacing {
+    margin-bottom: 2rem;
+}
+
+
+/* article box content */
+
+.articleEditorBox .articleBox h4 {
+    font-size: 1.25rem;
+    color: #000;
+    /*color: #4d4d4d;*/
+    font-weight: 500;
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+
+.articleEditorBox .articleBox h4.titleMbSpacing {
+    margin-bottom: 1.5rem;
+}
+
+
+.articleEditorBox .articleBox p {
+    font-size: 1.125rem;
+    /* color: #777; */
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 1.5rem;
+    margin-bottom: .5rem;
+    letter-spacing: 1px;
+}
+
+.articleEditorBox .articleBox {
+    margin-bottom: 1.75rem;
+}
+
+
+/* img box content */
+.articleEditorBox .articleBox .textBox {
+    padding: .6rem;
+}
+
+.articleEditorBox .articleBox .imgBox h4 {
+    font-size: 1.25rem;
+    color: #4d4d4d;
+    font-weight: 500;
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 1.75rem;
+}
+
+.articleEditorBox .articleBox .imgBox h4.titleMbSpacing {
+    margin-bottom: .3rem;
+}
+
+.articleEditorBox .articleBox .imgBox p {
+    font-size: 1rem;
+    color: #777;
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 1.5rem;
+    font-weight: 300;
+    /* margin-bottom: 1.5rem; */
+    margin-bottom: .5rem;
+}
+
+.articleEditorBox .articleBox .imgBox p.p_mb_spacing p {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    .editor_mtSpacing {
+        margin-top: 2rem;
+    }
+
+    .editor_mbSpacing {
+        margin-bottom: 2rem;
+    }
+
+    .articleEditorBox .articleBox {
+        margin-bottom: 1.5rem;
+    }
+
+    .articleEditorBox .articleBox h4.titleMbSpacing {
+        margin-bottom: 0rem;
+    }
+}
+
+.articleEditorBox .articleBox p.p_mb_spacing p {
+    margin-bottom: 1rem;
+}
+
+.articleEditorBox .articleBox .textBox {
+    padding: 0px .6rem;
+}
+
+.articleEditorBox .articleBox h4 {
+    /* padding-top: .35rem;
+    padding-bottom: .35rem; */
+}
+
+.articleEditorBox .articleBox p {
+    padding-bottom: 0px;
+}
+
+.articleEditorBox .articleBox h4.p_mb_spacing {
+    margin-bottom: 1rem;
+}
+
+.articleEditorBox .articleBox div.p_mb_spacing {
+    margin-bottom: 1.5rem;
+}
+
+.articleEditorBox img {
+    width: auto;
+    height: auto;
+}
+
+.articleEditorBox ul {
+    margin-bottom: .15rem;
+    list-style: initial;
+}
+
+.articleEditorBox a {
+    text-decoration: none;
+}
+
+.articleEditorBox iframe {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.articleEditorBox .articleBox .textBox {
+    padding: 0px;
+}
+
+.articleEditorBox ul {
+    list-style: initial !important;
+    margin: 0px 1rem;
+}
+
+.articleEditorBox ol {
+    list-style: decimal !important;
+    margin: 0px 2rem;
+}
+
+.articleEditorBox ol li {
+    list-style: decimal !important;
+    margin-bottom: 5px;
+    line-height: initial;
+}
+
+.articleEditorBox ul {
+    list-style-type: disc !important;
+}
+
+.articleEditorBox ul li {
+    list-style: disc !important;
+}

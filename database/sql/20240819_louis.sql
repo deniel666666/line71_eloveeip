@@ -1,0 +1,1 @@
+ALTER TABLE `product_type` ADD COLUMN `type_sales_price_prime` VARCHAR(50) NOT NULL DEFAULT '0' COMMENT '售價(額外)' AFTER `type_sales_price`;

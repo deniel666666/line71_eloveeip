@@ -1,0 +1,2 @@
+ALTER TABLE `product_cms_layout_type` ADD COLUMN `create_user` INT NULL DEFAULT '2' COMMENT '建立者' AFTER `updated_at`;
+ALTER TABLE `product_cms_layout_type` ADD COLUMN `own_user` INT NULL DEFAULT '2' COMMENT '擁有者' AFTER `updated_at`;
