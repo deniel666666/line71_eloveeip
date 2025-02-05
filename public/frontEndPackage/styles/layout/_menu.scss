@@ -1,0 +1,198 @@
+// 漢堡選單
+
+.burger-menu {
+  width: 48px;
+  height: 48px;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  cursor: pointer;
+  background-color: $title;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: $highlight;
+  }
+  .burger {
+    position: absolute;
+    background: white;
+    width: 15px;
+    height: 2px;
+    top: 23px;
+    left: 10px;
+    opacity: 1;
+  }
+}
+
+.burger::after,
+.burger::before,
+.burger {
+  transition: all 0.3s ease-in-out;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 25px;
+  height: 2px;
+  display: block;
+}
+
+.burger::before {
+  top: 10px;
+}
+
+.burger::after {
+  bottom: 10px;
+}
+
+// 側邊選單
+
+.offcanvas-collapse {
+  position: fixed;
+  top: 0px; /* Height of navbar */
+  bottom: 0;
+  left: 100%;
+  width: 80%;
+  z-index: 100;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  visibility: hidden;
+  background-color: #b3afaf;
+  transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+  @include xsmall {
+    width: 40%;
+  }
+  @include medium {
+    width: 30%;
+  }
+  @include large {
+    max-width: 20%;
+  }
+}
+.offcanvas-collapse.open {
+  visibility: visible;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.offcanvas-collapse a {
+  color: white;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+  }
+  &:hover,
+  &.active {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+// 麵包屑
+
+.breadcrumb {
+  a {
+    color: $text;
+  }
+  .active {
+    color: $highlight;
+  }
+}
+
+//懸浮按鈕
+
+.desktop-bottom-menu {
+  position: fixed;
+  right: 15px;
+  bottom: 40px;
+  z-index: 10;
+}
+
+.desktop-page-top-btn {
+  position: fixed;
+  border: none;
+  right: 15px;
+  bottom: 195px;
+  background-color: transparent;
+  z-index: 10;
+  .go-to-top {
+    font-size: 30px;
+    color: white;
+    background-color: $bg-darkgray;
+    padding: 15px;
+    border-radius: 50%;
+    &:hover,
+    &:focus {
+    background-color: $highlight;
+  }
+  }
+  
+}
+
+.mobile-page-top-btn {
+  position: absolute;
+  border: none;
+  right: 15px;
+  top: -10px;
+  background-color: transparent;
+  .go-to-top {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    background-color: $bg-darkgray;
+    &:hover,
+    &:focus {
+    background-color: $highlight;
+  }
+  }
+}
+
+.mobile-fixed-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  .mobile-bottom-menu {
+    height: 100%;  
+    a{
+        width: 100%;
+        text-align:center;
+        &.line-icon{
+            background-color: #17DC13;
+            color: white;
+            font-size: 20px;
+        }
+        &.call-icon{
+            background-color: #DC4313;
+            color: white;
+            font-size: 20px;
+        }
+    }
+    // li:first-child{
+    //     position: relative;
+    //     &::after{
+    //         content: "";
+    //         position: absolute;
+    //         width: 1px;
+    //         height: 72px;
+    //         right: 0;
+    //         background-color: white;
+    //     }
+    // }
+  }
+}

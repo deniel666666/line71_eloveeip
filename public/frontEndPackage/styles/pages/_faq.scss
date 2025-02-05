@@ -1,0 +1,72 @@
+.faq-banner{
+    min-height: 250px;
+    @include large{
+        min-height: auto;
+    }
+}
+.faqtab {
+    border-bottom: 1px solid #cccccc;
+}
+
+.faqtab-carousel {
+    padding: 0 20px;
+    .owl-stage {
+        margin: 0 auto;
+    }
+    a {
+        color: $title;
+        position: relative;
+        &.active {
+            color: $tabcolor;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 4px;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                background-color: $tabcolor;
+            }
+        }
+    }
+    .owl-nav {
+        position: absolute;
+        width: 105%;
+        top: -5%;
+        right: 0;
+        left: 0;
+    }
+    .owl-nav button.owl-prev {
+        position: absolute;
+        left: -5px;
+        top: -25px;
+        font-size: 2rem;
+        margin: 0px;  
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .owl-nav button.owl-next {
+        position: absolute;
+        right: 15px;
+        top: -25px;
+        font-size: 2rem;
+        margin: 0px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .owl-nav [class*="owl-"]:hover {
+        background-color: transparent;
+        color: $text;
+    }
+}
+
+.pagination {
+    a {
+        color: $text;
+    }
+}

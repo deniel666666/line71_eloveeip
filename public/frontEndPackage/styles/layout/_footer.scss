@@ -1,0 +1,29 @@
+ul.footer-links {
+    row-gap: 20px;
+    column-gap: 30px;
+    a {
+        color: $text;
+        &:hover {
+            color: $highlight;
+        }
+    }
+}
+
+footer{
+    margin-bottom: 38px;
+    @include medium{
+        margin-bottom: 0px;
+    }
+}
+
+
+.photonic {
+    a {
+        color: $text;
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+

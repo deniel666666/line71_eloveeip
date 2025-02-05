@@ -1,0 +1,186 @@
+.banner-carousel .owl-dots {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2%;
+}
+
+.banner-carousel.owl-theme .owl-dots .owl-dot span {
+  background: white;
+}
+
+.banner-carousel.owl-theme .owl-dots .owl-dot.active span,
+.banner-carousel.owl-theme .owl-dots .owl-dot:hover span {
+  background: $btn-gray;
+}
+
+
+
+.video-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video-container {
+  min-height: 230px;
+  @include xsmall {
+    min-height: 310px;
+  }
+  @include medium {
+    min-height: 430px;
+  }
+  @include large {
+    min-height: 580px;
+  }
+  @include xlarge {
+    min-height: 680px;
+  }
+}
+
+.video {
+  width: 85%;
+  min-height: 150px;
+  @include xsmall {
+    min-height: 230px;
+  }
+  @include medium {
+    min-height: 350px;
+  }
+  @include large {
+    width: 100%;
+    min-height: 500px;
+  }
+  @include xlarge {
+    min-height: 600px;
+  }
+}
+
+.case-area h2,.faq-area h2, .case-info-title {
+  z-index: 1;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0%;
+    top: 50%;
+    z-index: -1;
+  }
+}
+
+.case-area h2{
+     &:before{
+        background-color: white; 
+     }
+    span {
+        background-color: $bg-darkgray;
+      }
+}
+
+.faq-area h2, .case-info-title{
+    color: $title;
+    &:before{
+        background-color: #000000; 
+     }
+    span {
+        background-color: $bg-gray;
+      }
+}
+
+.case-area .case-know-more{
+    background-color:$btn-gray;
+    color:#ffffff;
+    border: 1px solid white;
+    z-index: 1;
+    &::before{
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 100%;
+      background-color: $highlight;
+      transition: width 0.5s;
+      z-index: -1;
+    }
+    &:hover{
+      &::before{  
+        width: 100%;
+      }
+    }
+
+}
+
+
+.case-carousel {
+  width: 100%;
+  height: 180px;
+  .item {
+    column-gap: 3%;
+    @include medium{
+      column-gap: 5%;
+  }
+  }
+  .title {
+    min-width: 20%;
+    max-width: 20%;
+    color: $highlight;
+  }
+  .subtitle {
+    min-width: 25%;
+    max-width: 25%;
+  }
+  .text {
+    min-width: 22%;
+    max-width: 22%;
+    @include small{
+        min-width: 28%;
+        max-width: 28%;
+    }
+    @include xlarge{
+        min-width: 30%;
+        max-width: 30%;
+    }
+  }
+}
+.swiper-wrapper .swiper-slide{
+  border-bottom: 1px solid $table-line;
+}
+
+
+.faq-area{
+    .card{
+        border: 1px solid $highlight;
+    }
+    .card-header{
+        border-bottom: 0;
+    }
+    .question-title{
+        color:$text;
+    }
+    .card-body{
+        padding:0 1.25rem 0.75rem 1.75rem;
+    }
+    a.faq-know-more{
+      background-color:$btn-gray;
+      color:#ffffff;
+      z-index: 1;
+      &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background-color: $highlight;
+        transition: width 0.5s;
+        z-index: -1;
+      }
+      &:hover{
+        &::before{  
+          width: 100%;
+        }
+      }
+    }
+}

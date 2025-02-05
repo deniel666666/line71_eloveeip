@@ -1,0 +1,49 @@
+@mixin padding($y: 0, $x: 0) {
+    padding: $y $x;
+}
+
+@mixin margin($y: 0, $x: 0) {
+    margin: $y $x;
+}
+
+@mixin screen {
+    @media (min-width: 1920px) {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+@mixin xxlarge {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin xlarge {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin large {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin xsmall {
+    @media (min-width: 375px) {
+        @content;
+    }
+}
