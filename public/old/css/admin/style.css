@@ -1,0 +1,243 @@
+/* icon設定 */
+    [class^="bi-"]::before, [class*=" bi-"]::before{
+        line-height: inherit;
+    }
+
+/* 分頁樣式 */
+    .pagination {
+        display: inline-block;
+        padding-left: 0;
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+    .pagination>li {
+        display: inline;
+    }
+    .pagination>li:first-child>a, .pagination>li:first-child>span {
+        margin-left: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .pagination>li>a, .pagination>li>span {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        margin-left: -1px;
+        line-height: 1.42857143;
+        color: #337ab7;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+/* 狀態顏色 */
+    .color_green{
+        color:green;
+    }
+    .color_yellow{
+        color:#ffcc22;
+    }
+    .color_red{
+        color:red;
+    }
+    .cursor-pointer {
+        cursor: pointer;
+    }
+    .overflow-x-scroll{
+        overflow-x: scroll;
+    }
+/* 側邊選單 */
+   
+    #block{ 
+        position: fixed; 
+        top:0; 
+        left:0; 
+        height:100%; 
+        width:100%; 
+        background-color:#000000; 
+        opacity: .5;
+        z-index:9999;
+    }
+    #block{
+        z-index:99;
+    }
+    #block{
+        visibility: hidden;
+    }
+
+    .product_layer_select .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product_layer_select .product_item{
+        margin-bottom: 15px;
+    }
+    .product_layer_select .product_item img{
+        width: 100%;
+        max-width: 200px;
+    }
+
+
+
+/* 內容共用設定 */
+
+    .show-div .button{
+        position: relative
+    }
+    .show-div input{
+        border:1px solid #000000
+    }
+
+
+    .button{
+        background: #E0E0E0;
+        border: 1px #000000 solid;
+        padding: 1px 6px;
+        color: #333;
+        cursor: pointer;
+    }
+    .button:hover{
+        background: #BEBEBE;
+        color: #333;
+        text-decoration: none;    
+    }
+
+
+    input, textarea{
+        outline: none;
+        border:1px solid #ADADAD;
+        background: transparent;
+        font-size:16px;
+        padding:0px 5px;
+    }
+    textarea{
+        resize: vertical;
+        min-height: 2rem;
+    }
+    input:focus,
+    textarea:focus{
+        border-color: #000000;
+    }
+
+
+    .bi-trash{
+        cursor: pointer;
+    }
+
+
+
+    .bi-save-fill{
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+
+/* 開關樣式設定 */
+     .f_swi {
+        position: relative;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+    .f_swi input {display:none;}
+    .f_sli {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #00C200;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border:2px solid black;
+    	text-align: center;
+    }
+    input:checked + .f_sli {
+        background-color: #9d9d9d;
+    }
+    .O {
+        display:block;
+    }
+    .X {
+        display:none;
+    }
+    .O_reverse {
+        display:none;
+    	background-color: #00C200;
+    }
+    .X_reverse {
+        display:block;
+    	background-color: #9d9d9d;
+    }
+    input:checked + .f_sli > .O {
+        display:none;
+    }
+    input:checked + .f_sli > .X {
+        display:block;
+    }
+    input:checked + .f_sli > .O_reverse {
+        display:block;
+    }
+    input:checked + .f_sli > .X_reverse {
+        display:none;
+}
+
+
+/*更改主題設定*/
+
+
+
+
+.w-c100{
+    width: calc(100% - 120px); 
+}
+
+.info-div textarea{
+    position: relative !important;
+}
+
+
+
+    /* 編輯 */
+    
+
+    .bi-image{
+        position:absolute;
+        top: calc(50% - 8px);
+        left: calc(50% - 8px);
+    }
+
+    .preview{
+        position:relative;
+        max-height: 100%;
+        max-width: 100%;
+        z-index: 1;
+        vertical-align: middle;
+    }
+    .tableA .preview{
+        max-width: 30%;
+    }
+
+   
+    
+    .image-box{
+        text-align: center;
+        font-size: 14px;
+        position: relative;
+        padding: 5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 100%;
+        min-height:360px; 
+        height: 100%;
+        border:2px solid #333; 
+        float:left; 
+        margin-right:10%;
+    }
+    
+
+
+

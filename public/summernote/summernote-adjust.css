@@ -1,0 +1,18 @@
+
+.note-editor .modal .modal-dialog{
+	z-index: 9;
+}
+
+.note-editor .note_editor_block{
+	position: fixed;
+    top: -5vh;
+    left: -30vw;
+    background: #000000cc;
+    width: 150vw;
+    height: 105vh;
+}
+
+.note-popover.popover,
+.modal.fade.show {
+    z-index: 11111;
+}
