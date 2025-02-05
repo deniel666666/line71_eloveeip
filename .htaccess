@@ -1,0 +1,24 @@
+Options -Indexes
+
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Hide a specific file
+<Files .env>
+  Order allow,deny
+  Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteCond %{REQUEST_URI} !^/public/
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ /public/$1
+	RewriteRule ^(/)?$ /public/index.php [L]
+</IfModule>

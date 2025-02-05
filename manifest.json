@@ -1,0 +1,23 @@
+{
+  "name": "名片網",
+  "short_name": "App",
+  "description": "名片網",
+  "theme_color": "#ff0000",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/admin/login",
+  "start_url": "/admin/login",
+  "icons": [
+      {
+        "src": "/manifest/favicon.ico.png",
+        "type": "image/png",
+        "sizes": "37x37"
+      },
+      {
+        "src": "/manifest/favicon.ico-144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+  ]
+}

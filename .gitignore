@@ -1,0 +1,66 @@
+# /node_modules
+vendor
+#/public/upload
+#/storage
+.env
+# .env.backup
+# .phpunit.result.cache
+# Homestead.json
+# Homestead.yaml
+# npm-debug.log
+# yarn-error.log
+
+/lang/1/menu.json
+
+# 前台靜態檔案不必push
+# 上架靜態檔案不必push，但須保留資料夾結構
+/public/upload/admin/system_development/*
+!/public/upload/admin/system_development/.gitignore
+/public/upload/admin/system_intro/*
+!/public/upload/admin/system_intro/.gitignore
+
+/public/upload/admin/system_intro/*
+!/public/upload/admin/system_intro/.gitignore
+
+/public/upload/categoryTag/*
+!/public/upload/categoryTag/.gitignore
+
+/public/upload/cms/cms/*
+!/public/upload/cms/cms/.gitignore
+!/public/upload/cms/cms/1
+/public/upload/cms/cms_layout/*
+!/public/upload/cms/cms_layout/.gitignore
+/public/upload/cms/member_gallery_cms/*
+!/public/upload/cms/member_gallery_cms/.gitignore
+/public/upload/cms/product_cms/*
+!/public/upload/cms/product_cms/.gitignore
+/public/upload/cms/product_cms_layout/*
+!/public/upload/cms/product_cms_layout/.gitignore
+!/public/upload/cms/product_cms_layout/1
+!/public/upload/cms/product_cms_layout/2
+
+/public/upload/fb/*
+!/public/upload/fb/.gitignore
+
+/public/upload/gallery/gallery/*
+!/public/upload/gallery/gallery/.gitignore
+/public/upload/gallery/member_gallery/*
+!/public/upload/gallery/member_gallery/.gitignore
+
+/public/upload/map/*
+!/public/upload/map/.gitignore
+
+/public/upload/member/*
+!/public/upload/member/.gitignore
+
+/public/upload/prodLabel/*
+!/public/upload/prodLabel/.gitignore
+
+/public/upload/product/*
+!/public/upload/product/.gitignore
+
+/public/upload/contact/*
+!/public/upload/contact/.gitignore
+
+/public/upload/miscellaneous/*
+!/public/upload/miscellaneous/.gitignore
